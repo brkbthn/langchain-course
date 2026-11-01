@@ -1,220 +1,335 @@
-# Byte-compiled / optimized / DLL files
+
+##################################################
+# PYTHON
+##################################################
+
 __pycache__/
-*.py[codz]
+*.py[cod]
 *$py.class
-
-# C extensions
+*.pyd
 *.so
+.python-version
+.python_history
 
-# Distribution / packaging
-.Python
+# Python build artifacts
 build/
-develop-eggs/
 dist/
-downloads/
-eggs/
 .eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
 *.egg
-MANIFEST
+*.egg-info/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
 
-# PyInstaller
-#   Usually these files are written by a python script from a template
-#   before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
-
-# Installer logs
+# Installer
 pip-log.txt
 pip-delete-this-directory.txt
 
-# Unit test / coverage reports
+# Unit testing
+.pytest_cache/
+.coverage
+.coverage.*
 htmlcov/
 .tox/
 .nox/
-.coverage
-.coverage.*
-.cache
+junit.xml
 nosetests.xml
+test-results/
 coverage.xml
 *.cover
-*.py.cover
-*.lcov
-.hypothesis/
-.pytest_cache/
-cover/
 
-# Translations
-*.mo
-*.pot
-
-# Django stuff:
-*.log
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
-
-# Flask stuff:
-instance/
-.webassets-cache
-
-# Scrapy stuff:
-.scrapy
-
-# Sphinx documentation
-docs/_build/
-
-# PyBuilder
-.pybuilder/
-target/
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# IPython
-profile_default/
-ipython_config.py
-
-# pyenv
-#   For a library or package, you might want to ignore these files since the code is
-#   intended to run in multiple environments; otherwise, check them in:
-# .python-version
-
-# pipenv
-#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
-#   However, in case of collaboration, if having platform-specific dependencies or dependencies
-#   having no cross-platform support, pipenv may install dependencies that don't work, or not
-#   install all needed dependencies.
-# Pipfile.lock
-
-# uv
-#   Similar to Pipfile.lock, it is generally recommended to include uv.lock in version control.
-#   This is especially recommended for binary packages to ensure reproducibility, and is more
-#   commonly ignored for libraries.
-# uv.lock
-
-# poetry
-#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
-#   This is especially recommended for binary packages to ensure reproducibility, and is more
-#   commonly ignored for libraries.
-#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
-# poetry.lock
-# poetry.toml
-
-# pdm
-#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
-#   pdm recommends including project-wide configuration in pdm.toml, but excluding .pdm-python.
-#   https://pdm-project.org/en/latest/usage/project/#working-with-version-control
-# pdm.lock
-# pdm.toml
-.pdm-python
-.pdm-build/
-
-# pixi
-#   Similar to Pipfile.lock, it is generally recommended to include pixi.lock in version control.
-# pixi.lock
-#   Pixi creates a virtual environment in the .pixi directory, just like venv module creates one
-#   in the .venv directory. It is recommended not to include this directory in version control.
-.pixi/*
-!.pixi/config.toml
-
-# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
-__pypackages__/
-
-# Celery stuff
-celerybeat-schedule*
-celerybeat.pid
-
-# Redis
-*.rdb
-*.aof
-*.pid
-
-# RabbitMQ
-mnesia/
-rabbitmq/
-rabbitmq-data/
-
-# ActiveMQ
-activemq-data/
-
-# SageMath parsed files
-*.sage.py
-
-# Environments
-.env
-.envrc
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
-# Spyder project settings
-.spyderproject
-.spyproject
-
-# Rope project settings
-.ropeproject
-
-# mkdocs/Zensical documentation
-/site
-
-# mypy
+# Type checking
 .mypy_cache/
 .dmypy.json
 dmypy.json
+.pytype/
+.pyre/
+.pyright/
 
-# Pyre type checker
+# Linting / formatting
+.ruff_cache/
+.pylint.d/
 .pyre/
 
-# pytype static type analyzer
-.pytype/
+##################################################
+# VIRTUAL ENVIRONMENTS
+##################################################
 
-# Cython debug symbols
-cython_debug/
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+virtualenv/
+.python-env/
 
-# PyCharm
-#   JetBrains specific template is maintained in a separate JetBrains.gitignore that can
-#   be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
-#   and can be added to the global gitignore or merged into this file.  For a more nuclear
-#   option (not recommended) you can uncomment the following to ignore the entire idea folder.
-# .idea/
+##################################################
+# ENVIRONMENT VARIABLES / SECRETS
+##################################################
 
-# Abstra
-#   Abstra is an AI-powered process automation framework.
-#   Ignore directories containing user credentials, local state, and settings.
-#   Learn more at https://abstra.io/docs
-.abstra/
+.env
+.env.*
+!.env.example
+!.env.template
 
-# Visual Studio Code
-#   Visual Studio Code specific template is maintained in a separate VisualStudioCode.gitignore that
-#   can be found at https://github.com/github/gitignore/blob/main/Global/VisualStudioCode.gitignore
-#   and can be added to the global gitignore or merged into this file. However, if you prefer, you
-#   could uncomment the following to ignore the entire vscode folder
-# .vscode/
-# Temporary file for partial code execution
-tempCodeRunnerFile.py
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+credentials/
+credentials.json
+service-account.json
 
-# Ruff stuff:
-.ruff_cache/
+# SSH keys
+id_rsa
+id_ed25519
+*.pub
 
-# PyPI configuration file
-.pypirc
+##################################################
+# IDE / EDITORS
+##################################################
 
-# Marimo
-marimo/_static/
-marimo/_lsp/
-__marimo__/
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+*~
+.project
+.pydevproject
+.settings/
 
-# Streamlit
-.streamlit/secrets.toml
+##################################################
+# OPERATING SYSTEM
+##################################################
+
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+##################################################
+# LOGS / TEMPORARY FILES
+##################################################
+
+*.log
+logs/
+log/
+tmp/
+temp/
+*.tmp
+*.bak
+*.old
+*.orig
+*.rej
+*.stackdump
+
+##################################################
+# JUPYTER NOTEBOOK
+##################################################
+
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+jupyter_runtime/
+
+##################################################
+# DATA SCIENCE / MACHINE LEARNING
+##################################################
+
+# Model artifacts
+*.pkl
+*.pickle
+*.joblib
+*.model
+*.pt
+*.pth
+*.onnx
+*.h5
+*.hdf5
+*.safetensors
+*.ckpt
+
+# ML experiment outputs
+mlruns/
+mlartifacts/
+wandb/
+.tensorboard/
+lightning_logs/
+checkpoints/
+runs/
+
+# Dataset files
+data/raw/
+data/processed/
+datasets/
+*.parquet
+*.feather
+*.arrow
+
+# NumPy / Pandas
+*.npy
+*.npz
+*.pandas
+
+##################################################
+# LANGCHAIN / LLM
+##################################################
+
+# Local vector databases
+chroma_db/
+chroma/
+.faiss/
+vector_store/
+vector_db/
+
+# Local model cache
+.cache/
+huggingface_cache/
+transformers_cache/
+
+# Prompt / trace outputs
+langsmith/
+traces/
+llm_logs/
+
+##################################################
+# FASTAPI / WEB APPLICATIONS
+##################################################
+
+instance/
+.webassets-cache/
+staticfiles/
+media/
+
+# API runtime
+uvicorn.log
+gunicorn.log
+
+##################################################
+# DOCKER / KUBERNETES
+##################################################
+
+# Local persistent volumes
+docker-data/
+volumes/
+k8s-data/
+
+# Local Kubernetes configs
+.kube/
+kubeconfig
+kubeconfig.*
+
+##################################################
+# DATABASES
+##################################################
+
+*.db
+*.sqlite
+*.sqlite3
+*.sqlitedb
+
+# Database dumps
+*.dump
+*.backup
+*.bak.sql
+
+##################################################
+# CELERY / BACKGROUND TASKS
+##################################################
+
+celerybeat-schedule
+celerybeat.pid
+
+##################################################
+# PACKAGE MANAGERS
+##################################################
+
+# Poetry
+poetry.toml
+
+# Pipenv
+Pipfile.lock
+
+# PDM
+.pdm-python
+.pdm-build/
+
+# uv
+.uv/
+
+##################################################
+# DOCUMENTATION / BUILD OUTPUT
+##################################################
+
+site/
+docs/_build/
+.sphinx-build/
+
+##################################################
+# LOCAL CONFIGURATION
+##################################################
+
+config.local.yaml
+config.local.yml
+settings.local.py
+local_settings.py
+
+##################################################
+# OTHER
+##################################################
+
+*.swp
+*.swo
+*.orig
+*.rej
+```
+
+## Projen için özellikle önemli noktalar
+
+| Klasör / Dosya | Neden ignore ediyoruz? |
+|---|---|
+| `.env` | OpenAI API key ve DB şifreleri |
+| `.venv/` | Python sanal ortamı |
+| `__pycache__/` | Python cache dosyaları |
+| `data/raw/` | Büyük ham veri setleri |
+| `mlruns/` | MLflow deney çıktıları |
+| `chroma_db/` | Yerel vektör veritabanı |
+| `*.pkl` | Eğitilmiş ML modelleri |
+| `logs/` | Uygulama logları |
+| `docker-data/` | Yerel Docker kalıcı verileri |
+
+## Önemli: Her şeyi ignore etmemeliyiz
+
+Örneğin şu dosyalar GitHub'da bulunmalı:
+
+```text
+aiops-root-cause-analysis/
+│
+├── app/
+├── tests/
+├── config/
+│   └── config.example.yaml
+│
+├── data/
+│   └── .gitkeep
+│
+├── docs/
+├── Dockerfile
+├── docker-compose.yml
+├── requirements.txt
+├── .env.example
+├── .gitignore
+├── README.md
+└── pyproject.toml
+```
+
+**İki önemli uyarı:**
+
+1. `Pipfile.lock` dosyasını genel olarak ignore etmeni önermiyorum. Uygulamanın bağımlılıklarını sabitlemek için Git'te tutulması faydalıdır.
+2. `*.pkl` gibi model dosyalarını ignore etmek mantıklı; ancak küçük ve kritik modelleri Git LFS veya model registry üzerinden yönetebilirsin.
+
+Bu yapı, geliştireceğimiz AIOps/RCA projesi için oldukça iyi bir başlangıç olacaktır.
